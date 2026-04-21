@@ -1,0 +1,23 @@
+timm
+hydra-core
+pillow
+matplotlib
+einops
+h5py
+pandas
+webdataset
+tensorboard
+wandb
+torch==2.5
+torch-fidelity
+torchdiffeq
+open-clip-torch==2.24.0
+xformers
+lightning
+diffusers
+jupyter
+
+# own util functions
+git+https://github.com/joh-schb/jutils.git#egg=jutils
+# if not working, try afterwards:
+# pip install git+https://github.com/joh-schb/jutils.git#egg=jutils

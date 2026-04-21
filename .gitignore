@@ -1,0 +1,14 @@
+sandbox
+checkpoints
+results
+logs
+wandb
+outputs
+
+*__pycache__*
+.idea
+venv
+
+*.DS_Store
+*._.DS_Store
+shardsFaceHQ

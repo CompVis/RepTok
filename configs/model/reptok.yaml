@@ -1,0 +1,83 @@
+# Minimal config used only to reconstruct the released monolith autoencoder model.
+# `reptok.encoder.encoder.load_raw()` reads `conf.model` from here.
+
+model:
+  _target_: reptok.encoder.encoder.RepTokLatentRF2D
+  val_shape:
+  - 4
+  - 32
+  - 32
+  time_cond_type: rf_t
+  use_pos_extra: true
+  ae:
+    _target_: reptok.encoder.encoder.AutoencoderKL
+    ae_cls: diffusers.AutoencoderKL
+    repo: stabilityai/sd-vae-ft-mse
+    ae_kwargs: {}
+  mapping:
+    _target_: reptok.encoder.encoder.MappingSpec
+    depth: 2
+    width: 1024
+    d_ff: ${mul:${.width},3}
+    dropout: 0.0
+  encoder:
+    _target_: reptok.encoder.encoder.RepTokEncoder
+    dino:
+      _target_: reptok.encoder.encoder.RepTokConditionEncoder
+      model_version: dinov2_vitb14_reg
+      impl_call: reptok.encoder.encoder.vit_base_reg
+      target_key: x_norm_clstoken
+      model_size: 224
+      requires_grad: false
+      compile: true
+      use_frozen_target: true
+      use_reflatten: false
+      nr_frames: 1
+      embed_dim: 768
+      nr_new_reg: 2
+      new_target_key: only_nonreg
+      unfreeze:
+      - cls_token
+      backbone:
+        _target_: reptok.encoder.encoder.ResidualProjectionBackbone
+        in_features: ${..embed_dim}
+        out_features: ${....backbone.main_level.width}
+  backbone:
+    _target_: reptok.encoder.encoder.Transformer
+    in_features: 4
+    out_features: 4
+    main_level:
+      width: 1152
+      depth: 28
+      proj_cls: reptok.encoder.encoder.CustomProj
+      proj_params:
+        in_cls: reptok.encoder.encoder.AddTokensProjv2
+        in_params:
+          cat_dim: 1
+          flatten: true
+          add_pos: true
+          pre_proj_cls: reptok.encoder.encoder.TokenMerge2D
+          pre_proj_params:
+            patch_size:
+            - 2
+            - 2
+        out_cls: reptok.encoder.encoder.RemoveTokensProjv2
+        out_params:
+          rm_pos: true
+          rm_dim: ${..in_params.cat_dim}
+          rm_first: ${mul:${.....encoder.dino.nr_frames},1}
+          post_proj_cls: reptok.encoder.encoder.TokenSplitLast2D
+          post_proj_params:
+            patch_size: ${...in_params.pre_proj_params.patch_size}
+          unflatten:
+            h: 16
+            w: 16
+      layer_class: reptok.encoder.encoder.GenericTransformerLayer
+      layer_params:
+        d_head: 72
+        d_cond_norm: ${model.mapping.width}
+        pos_enc_cls: reptok.encoder.encoder.AxialRoPE2D
+        pos_enc_params:
+          skip_first_n: 0
+          relative_canvas: true
+          learnable_freqs: false
