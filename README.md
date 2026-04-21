@@ -106,7 +106,7 @@ Please refer to `scripts/generation.ipynb` and `scripts/reconstruction.ipynb`.
 If you use our work in your research, please use the following BibTeX entry
 
 ```bibtex
-@inproceedings{gui2025reptok,
+@inproceedings{gui2026reptok,
   title={Adapting Self-Supervised Representations as a Latent Space for Efficient Generation}, 
   author={Ming Gui and Johannes Schusterbauer and Timy Phan and Felix Krause and Josh Susskind and Miguel Angel Bautista and Björn Ommer},
   booktitle={The Fourteenth International Conference on Learning Representations (ICLR)},
