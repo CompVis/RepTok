@@ -1,0 +1,96 @@
+LICENSE FOR PERSONAL AND SCIENTIFIC NON-COMMERCIAL RESEARCH PURPOSES
+(hereinafter referred to as „License“)
+Ludwig-Maximilians-Universität München, Akademiestraße 7, 80799 Munich, Germany (“Licensor”), is a leading research university in Europe and has developed the software „RepTok“ as part of its activities. The Licensor has the rights to use the aforementioned software. The Licensor is willing to grant limited rights, under certain conditions including – but not limited to – attribution as set out in Sections 3.5 and 3.6 below, to use the software for scientific or personal non-commercial research only; the use for other purposes is subject to a further license agreement with the Licensor. 
+
+
+1
+Definitions
+
+„Licensee“ means the individual or legal entity exercising permissions granted by this License.
+
+„Object Code“ is the intermediate result of a compiler or translation process of the Source Code of the Software.
+
+„Software“ means the computer program made available by the Licensor in the repository under „[Link einfügen]“ in Object or Source Code form.
+
+„Source Code“ means the code of the Software in the version of the programming language(s).
+
+
+2
+Conclusion of this license agreement 
+
+The conclusion of this license agreement is a prerequisite for the granting of the rights of use in accordance with Section 3 below. Without the acceptance of these license conditions, the use of the Software or parts thereof is prohibited. By downloading the Software or parts thereof, the license conditions are deemed to have been accepted by the Licensee.
+
+
+3
+License / rights of use
+
+3.1
+Subject to the terms and conditions of this License, the Licensee’s acceptance of the terms of this License and the Licensee’s compliance with the provisions of this License, the Licensor hereby grants the Licensee the worldwide, perpetual, non-exclusive, sublicensable within the limits of Section 3.3 below, non-transferable and royalty-free right, limited in terms of content for the purposes of personal or scientific non-commercial research purposes, including the right to internal testing, evaluation and reproduction of the Software, to use the Software on Licensee's computers, i.e. to store and load it permanently or temporarily, to display it and to run it, even to the extent that duplications are necessary for this purpose. For avoidance of doubt, no rights of use for any commercial purposes (including commercial research) are granted under this License.
+
+3.2
+The Licensee is – within the purposes in Section 3.1 above – entitled to modify the Software, including, but not limited to modifications made to the Software by the Licensee such as implementing new modules and functionalities.
+
+3.3
+Licensee shall be allowed to reproduce and distribute copies of the modified or unmodified Software (in Source Code or in Object Code form) and grant usage rights (sublicensing) to third parties, however always limited to the scope and purposes under Section 3.1 above and the further obligations defined in Sections 3.5 and 3.6 below.
+
+3.4
+No further rights of use, especially not right for exploitation are granted to the Licensee. The Licensor shall retain all intellectual property rights, including software and know-how, unless expressly licensed hereunder. The Licensee agrees to refrain from any further use or commercialization of the Software not permitted by the license granted herein.
+
+3.5
+The Licensee shall not remove, alter, obscure, or otherwise modify any copyright notices, author attributions, license references, or other proprietary markings contained in or accompanying the Software. Any distribution of the Software, whether in original or modified form, shall be accompanied by a clear and prominent attribution to the original author(s) in the following form:
+
+*"Originally developed by [Author / Institution]. Based on the methods described in: [Full Citation of Paper] (available at: [DOI / URL])."*
+
+The attribution requirement shall apply equally to any derivative works, integrations, or other adaptations of the Software, regardless of the extent of modification. Where no associated publication exists, attribution shall be made to the original author(s) as indicated in the copyright notice of the Software. The Licensee shall ensure that any person or entity to whom the Software is made accessible — whether by distribution, sublicensing, provision of access, or any other means — is bound by obligations equivalent to those set out in this Section 3.5. The Licensee shall not make the Software accessible to any third party unless such third party has agreed to be bound by such obligations prior to receiving access.
+
+3.6
+If the Licensee distributes, makes available to third parties or otherwise publishes results or works generated with or based on the Software (such as scientific publications, papers, presentations, each of them or together: “Publications”), the Publications shall include a standard citation indicating the use of the Software and the Licensor. If the Software itself is mentioned in Publications, the mention shall include the full name of the Software and a reference to the Licensor.
+
+3.7
+For any use of the Software beyond the scope of the rights granted under this Section 3 of the License, including in particular any commercial use or exploitation, the Licensee shall contact the Licensor by e-mail at the following address: license.compvis@ifi.lmu.de The Licensor will consider requests for extended or commercial use rights on a case-by-case basis and in its own discretion. No such additional rights are granted unless confirmed in writing by the Licensor.
+
+
+4
+Liability, Warranty
+
+4.1
+Except in cases of intentional and grossly negligent conduct, the Licensor, its legal representatives, trustees, officers and employees shall not be liable for direct or indirect, material or immaterial loss or damage of any kind arising from the License or the use of the Software; this applies, among other things, but not exclusively, to loss of goodwill, loss of production, computer failures or errors, loss of data or economic loss or damage, even if the Licensor has been notified of the possibility of such loss or damage. 
+
+4.2
+Irrespective of clause 4.1, the Licensor shall only be liable within the scope of statutory product liability to the extent that the respective provisions are applicable to the Software.
+
+4.3
+The Licensee indemnifies the Licensor against any claims of third parties, including related costs such as reasonable lawyers' fees and court costs, asserted against the Licensor in connection with the Licensee's exercise of the license or due to a culpable breach of the terms of this License by the Licensee.
+
+
+5
+Limited warranty
+
+This License is granted free of charge and thus constitutes a gift. Accordingly, any warranty is excluded;  liability for fraudulent concealment of a defect in accordance with the statutory provisions shall remain unaffected. The Software is a work in progress. The Software is not complete and may therefore contain errors ("bugs"), as is inherent in this type of development. The Licensor assumes no warranty for the usability or performance of the Software.
+
+
+6
+No Trademarks
+
+This License does not grant permission to use the trade names, trademarks, service marks or product names of the Licensor.
+
+
+7 Termination for Breach / Unauthorized Use
+
+7.1 
+The rights of use granted under Section 3 of this License are granted subject to the Licensee's continued compliance with all terms and conditions set forth herein. Any breach of the Licensee's obligations under this License, including in particular any use of the Software beyond the scope permitted under Section 3, shall cause the rights of use granted hereunder to terminate automatically and without notice, effective as of the date on which such breach first occurred.
+
+7.2 
+Upon termination of the rights of use pursuant to Section 7.1, the Licensee shall immediately cease all use of the Software, delete or destroy all copies in its possession or control, and, upon request, confirm such deletion or destruction to the Licensor in writing.
+
+7.3 
+The Licensor's statutory rights and remedies, including claims for injunctive relief, damages, and the removal or recall of infringing copies pursuant to applicable law, shall remain unaffected by the termination of the rights of use under this Section.
+
+7.4 
+The termination of the rights of use pursuant to Section 7.1 shall not affect any rights previously sub-licensed to third parties in accordance with Section 3.3, provided that such third parties are in full compliance with the obligations of this License at the time of termination.
+
+
+8
+Applicable Law / Venue
+
+The laws of the Federal Republic of Germany apply without reference to the conflict of law provisions and excluding the United Nations Convention on Contracts for the International Sale of Goods (CISG). If the Licensee is not a consumer in terms of applicable law, the courts of Munich are hereby agreed as exclusive venue for all disputes arising from or connected with the License. 
